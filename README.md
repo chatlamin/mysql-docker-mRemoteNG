@@ -10,7 +10,7 @@
 
 загрузить mysql-script.sql
 
-    GRANT ALL PRIVILEGES ON mRemoteNGcit.* TO root@"%" IDENTIFIED BY root_password' WITH GRANT OPTION;
+    GRANT ALL PRIVILEGES ON mRemoteNG.* TO root@"%" IDENTIFIED BY root_password' WITH GRANT OPTION;
     exit;
 
 [Источник](https://mremoteng.readthedocs.io/en/latest/sql_configuration.html)
