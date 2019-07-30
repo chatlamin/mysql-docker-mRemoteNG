@@ -2,6 +2,5 @@ FROM mysql:5.7.27
 
 COPY my.cnf /etc/
 
-COPY upload.sh /
+COPY mysql-script.sql /docker-entrypoint-initdb.d/
 
-RUN /upload.sh
