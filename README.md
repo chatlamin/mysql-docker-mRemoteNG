@@ -1,16 +1,15 @@
-# mysql-docker-mRemoteNG
+# Docker-контейнер MySQL для [mRemoteNG](https://github.com/mRemoteNG/mRemoteNG)
 
-## Создание базы данных
+## Создаем образ
 
-    docker exec -ti mysql-server bash
-    mysql --user=root --password -proot_password
-    *пароль*
-    CREATE DATABASE mRemoteNG character set utf8 collate utf8_unicode_ci;
-    USE mRemoteNG;
+Выполнить
 
-загрузить mysql-script.sql
+    ./build.sh
 
-    GRANT ALL PRIVILEGES ON mRemoteNG.* TO root@"%" IDENTIFIED BY 'root_password' WITH GRANT OPTION;
-    exit;
+## Запуск контейнера
 
-[Источник](https://mremoteng.readthedocs.io/en/latest/sql_configuration.html)
+Выполнить
+
+    ./run.sh
+
+Для дальнейшей настройки mRemoteNG, воспользуйтесь [этой инструкцией](https://mremoteng.readthedocs.io/en/latest/sql_configuration.html#steps-to-configure-mremoteng-for-sql)

@@ -1,4 +1,4 @@
-CREATE DATABASE mRemoteNG character set utf8 collate utf8_unicode_ci;
+CREATE DATABASE mRemoteNG;
 
 USE mRemoteNG;
 
